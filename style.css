@@ -133,6 +133,28 @@ body {
     font-weight: 300;
 }
 
+.header p.intro-text {
+    font-size: 0.95rem;
+    /* Diminuindo o tamanho do texto */
+    font-weight: 400;
+    color: #fff;
+    /* Cor branca para destacar sobre o fundo escuro */
+    line-height: 1.6;
+    margin-top: 15px;
+    max-width: 700px;
+    /* Largura limitada para o texto não ficar muito largo */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    /* Centralizando o texto */
+}
+
+.header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: white;
+}
+
 .sobre-section {
     padding: 100px 0;
     background-color: #003366;
@@ -156,6 +178,40 @@ body {
     text-align: center;
     font-size: 1.1rem;
     line-height: 1.6;
+}
+
+#habilidades {
+    background-color: white !important;
+}
+
+.skill-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill-icon {
+    margin: 20px;
+    border: 2px solid #007bff;
+    /* Bordas azuis */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.skill-icon img {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+
+.skill-icon img:hover {
+    transform: scale(1.2);
+}
+
+.skill-icon:hover {
+    transform: scale(1.1);
 }
 
 @media (max-width: 991px) {
