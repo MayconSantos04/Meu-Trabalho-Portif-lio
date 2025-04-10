@@ -19,16 +19,37 @@
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link">Sobre mim</a></li>
-                    <li class="nav-item"><a class="nav-link">Tecnologias</a></li>
-                    <li class="nav-item"><a class="nav-link">Projetos</a></li>
-                    <li class="nav-item"><a class="nav-link">Contato</a></li>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link bord" href="#sobre">Sobre mim</a></li>
+                    <li class="nav-item"><a class="nav-link bord" href="#tecnologias">Tecnologias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" id="contato" href="#contato">Contato</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <!-- Sobre mim -->
+
+    <section id="sobre" class="sobre-section">
+        <div class="container sobre-content">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center">
+                    <img src="seu-perfil.jpg" alt="Foto de Maycon Santos" class="img-fluid perfil-img">
+                </div>
+                <div class="col-md-8">
+                    <h2 class="sobre-titulo">Sobre mim</h2>
+                    <p class="sobre-texto">
+                        Olá! Sou Maycon Santos, desenvolvedor apaixonado por tecnologia, design e boas práticas.
+                        Tenho experiência com HTML, CSS, JavaScript e estou sempre aprendendo coisas novas.
+                    </p>
+                    <a href="#contato" class="btn btn-warning mt-3">Entre em contato</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
