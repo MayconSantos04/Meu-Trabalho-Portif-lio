@@ -229,6 +229,10 @@ body {
     transition: transform 0.3s ease;
 }
 
+.cardp {
+    background-color: rgb(9, 61, 113);
+}
+
 @media (max-width: 991px) {
 
     .navbar.navbar.bg-dark {
