@@ -231,9 +231,14 @@ section[id] {
     scroll-margin-top: 120px;
 }
 
+#projetos{
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
 .projetos h2 {
     margin-top: 5%;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 @media (max-width: 991px) {
