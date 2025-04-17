@@ -238,8 +238,15 @@ body {
 }
 
 section[id] {
-    scroll-margin-top: 120px;
+    scroll-margin-top: 160px;
 }
+
+.sobre-section h2,
+#tecnologias h2,
+#projetos h2 {
+    padding-top: 20px;
+}
+
 
 /* Seção Projetos */
 #projetos {
@@ -445,9 +452,16 @@ section[id] {
         font-size: 1rem;
     }
 
-    section {
-        scroll-margin-top: 120px;
+    section[id] {
+        scroll-margin-top: 160px;
     }
+
+    .sobre-section h2,
+#tecnologias h2,
+#projetos h2 {
+    padding-top: 20px;
+}
+    
 
     .footer {
         font-family: 'Poppins', sans-serif;
