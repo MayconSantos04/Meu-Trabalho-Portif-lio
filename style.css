@@ -3,6 +3,13 @@
 body {
     background-color: #003366 !important;
     font-family: 'Poppins', sans-serif !important;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.navbar .container-fluid {
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .parag {
@@ -19,7 +26,6 @@ body {
 .navbar .nav-link {
     padding: 7px 20px;
     color: white !important;
-    margin-left: 5%;
 
 }
 
