@@ -7,6 +7,33 @@ body {
     margin-right: 25%;
 }
 
+#inicio {
+    padding-top: 160px;
+  }
+
+  section {
+    padding: 100px 0;
+  }
+  
+
+.bottomtds{
+    margin-bottom: 50% !important;
+}
+
+.btncv{
+    border: 2px solid #f18809;
+    text-decoration: none;
+    color:#ffffff;
+    padding: 7px 20px;
+    border-radius: 50px;
+}
+
+.btncv:hover{
+   background-color: #f18809;
+   color: #331436 !important;
+    padding: 9px 22px;
+}
+
 .navbar .container-fluid {
     padding-left: 5%;
     padding-right: 5%;
@@ -147,16 +174,14 @@ body {
 }
 
 .header img {
-    border-radius: 50%;
-    width: 280px;
-    height: 280px;
+    width: 350px;
+    height: 350px;
     object-fit: cover;
     margin-bottom: 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .header h1 {
-    font-size: 5rem;
+    font-size: 4.5rem;
     margin-bottom: 10px;
     font-weight: bold;
 }
@@ -178,10 +203,21 @@ body {
     text-align: center;
 }
 
+.imgcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }  
+
 .header p {
     font-size: 1.2rem;
     font-weight: 300;
     color: white;
+}
+
+.section-title{
+    font-weight: 700;
 }
 
 .sobre-section {
@@ -198,7 +234,7 @@ body {
 .sobre-titulo {
     text-align: center;
     font-size: 2.5rem;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 20px;
 }
 
@@ -222,10 +258,9 @@ body {
 
 .skill-icon {
     margin: 20px;
-    border: 2px solid #ffffff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 10px 15px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 15px rgba(214, 121, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
@@ -241,6 +276,7 @@ body {
 
 .skill-icon:hover {
     transform: scale(1.1);
+    border: 2px solid #f18809;
 }
 
 .cardte {
@@ -251,15 +287,16 @@ body {
 
 .cardtes {
     margin: 20px;
-    border: 2px solid #ffffff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 10px 15px rgba(255, 255, 255, 0.1);
     transition: transform 0.3s ease;
+    background-color: #f18809 !important;
+    color: #ffffff !important;
 }
 
 .cardp {
-    background-color: rgb(9, 61, 113);
+    background-color: #f18809;
 }
 
 section[id] {
@@ -290,7 +327,6 @@ section[id] {
     background-color: #fff;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     max-width: 350px;
     width: 100%;
@@ -300,10 +336,9 @@ section[id] {
 
 .projeto-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
-    border: 2px solid #003366;
+    box-shadow: 0 12px 25px rgba(241, 137, 9, 0.336);
+    border: 2px solid #f18809 !important;
     transform: translateY(-8px);
-    border-color: #003366;
 }
 
 .projeto-card img {
@@ -332,7 +367,7 @@ section[id] {
 .btn-ver-mais {
     display: inline-block;
     padding: 10px 18px;
-    background-color: #ff0000;
+    background-color: #331436;
     color: #fff;
     border-radius: 6px;
     text-decoration: none;
@@ -341,7 +376,7 @@ section[id] {
 }
 
 .btn-ver-mais:hover {
-    background-color: #003db8;
+    background-color: #f18809;
 }
 
 .footer {
@@ -388,7 +423,7 @@ section[id] {
 
 .footer .social-links a:hover img {
     transform: scale(1.2);
-    border: 2px solid #0056ff !important;
+    border: 2px solid #f18809 !important;
     border-radius: 100%;
     padding: 5px;
 }
@@ -401,6 +436,26 @@ section[id] {
 
 
 @media (max-width: 991px) {
+
+    .header {
+        margin-top: 10%;
+        color: white;
+        padding: 110px 0;
+        text-align: center;
+        height: 100%;
+    }
+
+    .header img {
+        width: 220px;
+        height: 220px;
+        object-fit: cover;
+        margin-bottom: 20px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .parag {
+        text-align: center !important;
+    }
 
     body {
         margin-left: 10%;
@@ -416,7 +471,7 @@ section[id] {
     
     #cntt:hover {
         background-color: transparent;
-        color: #ffcc00 !important;
+        color: #f18809 !important;
     }
 
     .navbar.navbar.bg-dark {
@@ -432,7 +487,7 @@ section[id] {
     }
 
     .navbar-nav .nav-item {
-        border-bottom: 3px solid #ffcc00;
+        border-bottom: 3px solid #f18809;
         border-bottom-left-radius: 40px;
         border-bottom-right-radius: 40px;
     }
@@ -446,7 +501,7 @@ section[id] {
 
     .navbar-nav .nav-link:hover {
         background-color: none;
-        color: #ffcc00 !important;
+        color: #f18809!important;
         border: none;
     }
 
@@ -469,12 +524,16 @@ section[id] {
         font-size: 1rem;
     }
 
+    .nome{
+        font-size: 1rem !important;
+    }
+
     .sobre-content {
         text-align: center;
     }
 
     .sobre-titulo {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .sobre-texto {
@@ -506,6 +565,20 @@ section[id] {
     .footer p {
         font-size: 15px;
         margin-bottom: 10px;
+    }
+
+    .navbar-brand{
+        font-size: 1rem !important;
+    }
+
+    #para1{
+        font-size: 0.8rem;
+    }
+    
+    .parag {
+        color: #f18809 !important;
+        font-size: 1rem !important;
+        text-align: center !important;
     }
 
 }
