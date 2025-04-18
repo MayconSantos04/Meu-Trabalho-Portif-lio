@@ -126,6 +126,7 @@ body {
     color: white;
     padding: 120px 0;
     text-align: center;
+    height: 80%;
 }
 
 .header img {
@@ -387,13 +388,13 @@ section[id] {
     #cntt {
         text-align: center;
         border: none;
-        border-radius: none;
+        border-radius: 0;
         padding: 7px 20px;
     }
-
+    
     #cntt:hover {
-        background-color: #ffcc00;
-        color: #003366 !important;
+        background-color: transparent;
+        color: #ffcc00 !important;
     }
 
     .navbar.navbar.bg-dark {
@@ -422,9 +423,9 @@ section[id] {
     }
 
     .navbar-nav .nav-link:hover {
-        background-color: #ffcc00;
-        border-bottom-left-radius: 40px;
-        border-bottom-right-radius: 40px;
+        background-color: none;
+        color: #ffcc00 !important;
+        border: none;
     }
 
     .headertt {
@@ -477,7 +478,7 @@ section[id] {
 
     .footer h2 {
         font-size: 2rem;
-        margin-top: 50px;
+        margin-top: 50px; 
     }
 
     .footer p {
