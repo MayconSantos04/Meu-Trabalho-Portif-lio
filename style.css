@@ -7,6 +7,20 @@ body {
     margin-right: 25%;
 }
 
+.elemento-pai {
+    padding-bottom: 1px;
+  }
+
+  .elemento-pai {
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+html {
+    scroll-behavior: smooth;
+  }
+
 #inicio {
     padding-top: 120px;
   }
@@ -15,10 +29,6 @@ body {
     padding: 100px 0;
   }
   
-
-.bottomtds{
-    margin-bottom: 50% !important;
-}
 
 .btncv{
     border: 2px solid #f18809;
@@ -432,6 +442,35 @@ section[id] {
     color: #8a8989;
     margin-top: 20px;
 }
+
+#btnTopo img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    border-radius: 20%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 9999
+}
+
+#btnTopo:hover img {
+    transform: scale(1.2); /* Aumenta um pouco o ícone ao passar o mouse */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#btnTopo.show {
+    animation: pulse 1.5s ease-in-out infinite; /* Pulsação contínua */
+}
+
+
 
 
 @media (max-width: 991px) {
