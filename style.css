@@ -269,26 +269,23 @@ html {
 }
 
 .skill-icon {
+    background-color: #4d1352;
     margin: 20px;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 10px 15px rgba(214, 121, 0, 0.1);
+    border-radius: 2px;
     transition: transform 0.3s ease;
+    border-bottom: 5px solid #f18809;
 }
 
 .skill-icon img {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 83px;
     transition: transform 0.3s ease;
-}
-
-.skill-icon img:hover {
-    transform: scale(1.2);
 }
 
 .skill-icon:hover {
     transform: scale(1.1);
-    border: 2px solid #f18809;
+    border-bottom: 5px solid #794200;
 }
 
 .cardte {
@@ -482,6 +479,11 @@ section[id] {
         font-weight: 400;
     }
 
+    body {
+        margin-left: 7% !important;
+        margin-right: 7% !important;
+    }
+
     .header {
         margin-top: 10%;
         color: white;
@@ -500,12 +502,7 @@ section[id] {
     .parag {
         text-align: center !important;
     }
-
-    body {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
+    
     #cntt {
         text-align: center;
         border: none;
@@ -581,7 +578,7 @@ section[id] {
     }
 
     .sobre-texto {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         font-weight: 300;
     }
 

@@ -16,7 +16,7 @@
 <body>
 
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
-            <!-- <div class="container-fluid"></div> -->
+            <div class="container-fluid">
             <a class="navbar-brand" href="#">Maycon Santos</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <div class="hamburger">
@@ -35,6 +35,7 @@
                     <a class="nav-link nav-item" id="cntt" href="#contato">Contato</a>
                 </div>
             </div>
+        </div>
         </nav>
         
     </header>
@@ -61,7 +62,7 @@
         <div class="container sobre-content">
             <div class="row align-items-center">
                 <div class="col-md-8 mx-auto text-md-center">
-                    <h2 class="sobre-titulo">Sobre <span span class="titulo-colorido">mim</span></h2>
+                    <h2 class="sobre-titulo section-title">Sobre <span span class="titulo-colorido">mim</span></h2>
                     <p class="sobre-texto">
                         Meu nome é Maycon, <span class="titulo-colorido"><strong>sou estudante de desenvolvimento front-end</strong></span> e tenho 21 anos.
                         Com foco voltado para a <span class="titulo-colorido"><strong>área de tecnologia, design e criação</strong></span> de experiências digitais.
@@ -85,35 +86,35 @@
         <p class="sobre-texto">Essas são algumas das tecnologias que mais uso para a criação de sites. Veja essas ferramentas.</p>
         <div class="skill-icons">
             <div class="skill-icon">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                <img src="/icones/html.png" />
                 <p>HTML5</p>
             </div>
             <div class="skill-icon">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="CSS3">
+                <img src="/icones/iconecss.png" alt="CSS3">
                 <p>CSS3</p>
             </div>
             <div class="skill-icon">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript">
+                <img src="icones/path1-1.png" alt="JavaScript">
                 <p>JavaScript</p>
             </div>
             <div class="skill-icon">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js">
+                <img src="/icones/js_icons.png" alt="Node.js">
                 <p>Node.js</p>
             </div>
             <div class="skill-icon">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
+                <img src="/icones/bootstrap.png"
                     alt="Bootstrap">
                 <p>Bootstrap</p>
             </div>
             <div class="skill-icon">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg"
+                <img src="/icones/iconelinux.png"
                     alt="Linux" />
                 <p>Linux</p>
             </div>
 
             <!-- Cards Resumidos -->
             <div>
-                <h4>Tecnologias mais usados</h4>
+                <h4 class="section-title">Tecnologias mais usados</h4>
 
                 <div class="cardte">
                     <div class="card cardtes" style="width: 18rem;">
@@ -211,7 +212,6 @@
         </div>
     </footer>
 
-    <!-- Botão de voltar ao topo -->
     <button id="btnTopo" style="display: none; position: fixed; bottom: 20px; right: 20px; border: none; background-color: transparent; cursor: pointer;">
         <img src="/img/iconesubir.png" alt="Voltar ao topo" style="width: 50px; height: 50px; transition: transform 0.3s ease;">
     </button>    
@@ -227,7 +227,6 @@
   document.addEventListener("DOMContentLoaded", function () {
     AOS.init();
 
-    // Função para scroll suave para hash da URL (após carregamento)
     const hash = window.location.hash;
     if (hash) {
       setTimeout(() => {
@@ -242,7 +241,6 @@
       }, 300);
     }
 
-    // Scroll suave ao clicar nos links do menu
     document.querySelectorAll('.nav-link[href^="#"], #cntt').forEach(link => {
       link.addEventListener('click', function (e) {
         e.preventDefault();
@@ -250,7 +248,7 @@
         if (target) {
           setTimeout(() => {
             target.scrollIntoView({ behavior: 'smooth' });
-            history.pushState(null, null, this.getAttribute('href')); // atualiza a URL
+            history.pushState(null, null, this.getAttribute('href'));
           }, 50);
         }
       });
