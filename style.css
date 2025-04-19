@@ -26,22 +26,49 @@ html {
   }
 
   section {
-    padding: 100px 0;
+    padding: 130px 0;
   }
   
 
-.btncv{
+/* Estilo inicial do botão */
+.btncv {
     border: 2px solid #f18809;
     text-decoration: none;
-    color:#ffffff;
+    color: #ffffff;
     padding: 7px 20px;
     border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
-.btncv:hover{
-   background-color: #f18809;
-   color: #331436 !important;
+.btncv::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.5s ease;
+    transform: skewX(-20deg);
+    z-index: 0;
+}
+
+.btncv:hover::before {
+    left: 100%;
+}
+
+.btncv:hover {
+    background-color: #f18809;
+    color: #331436 !important;
     padding: 9px 22px;
+    box-shadow: 0 8px 20px rgba(241, 136, 9, 0.3);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
     text-decoration: none;
 }
 
@@ -73,14 +100,15 @@ html {
 }
 
 #cntt {
-    border: 2px solid #f18809;
-    border-radius: 50px;
+    background-color: #5e1464;
+    border-radius: 3px;
     padding: 7px 20px;
 }
 
 #cntt:hover {
     background-color: #f18809;
     color: #331436 !important;
+    border-bottom: none;
 }
 
 .navbar .nav-link {
@@ -203,12 +231,38 @@ html {
 .sobre-section {
     padding: 100px 0;
     color: white;
+    background-image: url(/img/amontadavalley.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
 }
+
+.sobre-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.541), transparent),  url(img/amontadavalley.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(4px);
+    mask-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+    z-index: 0;
+}
+
 
 .sobre-content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    z-index: 2;
+    border-bottom: 3px solid #f18809;
 }
 
 .sobre-titulo {
@@ -492,8 +546,8 @@ section[id] {
     }
     
     #cntt {
+        background-color: transparent;
         text-align: center;
-        border: none;
         border-radius: 0;
         padding: 7px 20px;
     }
@@ -501,6 +555,25 @@ section[id] {
     #cntt:hover {
         background-color: transparent;
         color: #f18809 !important;
+    }
+
+    .btncv {
+        padding: 7px 20px;
+        border: 2px solid #f18809;
+        border-radius: 50px;
+        background-color: transparent;
+        color: #f18809;
+        box-shadow: none;
+        transform: none;
+    }
+
+    .btncv::before {
+        content: none;
+    }
+
+    .btncv:hover {
+        background-color: #f18809;
+        color: #331436 !important;
     }
 
     .navbar.navbar.bg-dark {
