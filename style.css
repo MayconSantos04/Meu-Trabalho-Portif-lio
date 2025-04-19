@@ -118,7 +118,7 @@ html {
     transition: all 0.3s ease;
 }
 
-
+/* 
 .hamburger.open div:nth-child(2) {
     opacity: 0;
 }
@@ -147,7 +147,7 @@ html {
 
 .navbar-nav .nav-item:nth-child(4) {
     animation-delay: 0.4s;
-}
+} */
 
 @keyframes fadeIn {
     0% {
