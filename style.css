@@ -478,6 +478,10 @@ section[id] {
 
 @media (max-width: 991px) {
 
+    .section-title{
+        font-weight: 400;
+    }
+
     .header {
         margin-top: 10%;
         color: white;
@@ -577,7 +581,8 @@ section[id] {
     }
 
     .sobre-texto {
-        font-size: 1rem;
+        font-size: 0.8rem;
+        font-weight: 300;
     }
 
     section[id] {
