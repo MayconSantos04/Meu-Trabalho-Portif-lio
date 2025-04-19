@@ -42,6 +42,7 @@ html {
    background-color: #f18809;
    color: #331436 !important;
     padding: 9px 22px;
+    text-decoration: none;
 }
 
 .navbar .container-fluid {
@@ -243,15 +244,16 @@ html {
 
 .sobre-titulo {
     text-align: center;
-    font-size: 2.5rem;
-    font-weight: 600;
+    font-size: 2.2rem;
+    font-weight: 700;
     margin-bottom: 20px;
 }
 
 .sobre-texto {
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.6;
+    font-weight: 300;
 }
 
 #tecnologias {
