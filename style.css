@@ -119,37 +119,6 @@ html {
     transition: all 0.3s ease;
 }
 
-/* 
-.hamburger.open div:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger.open div:nth-child(3) {
-    transform: rotate(-45deg);
-    top: -6px;
-}
-
-.navbar-nav .nav-item {
-    opacity: 0;
-    animation: fadeIn 0.5s forwards;
-}
-
-.navbar-nav .nav-item:nth-child(1) {
-    animation-delay: 0.1s;
-}
-
-.navbar-nav .nav-item:nth-child(2) {
-    animation-delay: 0.2s;
-}
-
-.navbar-nav .nav-item:nth-child(3) {
-    animation-delay: 0.3s;
-}
-
-.navbar-nav .nav-item:nth-child(4) {
-    animation-delay: 0.4s;
-} */
-
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -275,6 +244,7 @@ html {
     border-radius: 2px;
     transition: transform 0.3s ease;
     border-bottom: 5px solid #f18809;
+    border-top-left-radius: 30px;
 }
 
 .skill-icon img {
@@ -298,13 +268,30 @@ html {
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
-    transition: transform 0.3s ease;
-    background-color: #f18809 !important;
+    background-color: #4d1352 !important;
     color: #ffffff !important;
+    border-top-left-radius: 60px !important;
+    position: relative;
+    overflow: visible;
 }
 
-.cardp {
-    background-color: #f18809;
+.cardtes::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 0.5px solid #ffffff;
+    border-radius: 63px 4px 4px 4px;
+    opacity: 0;
+    transition: opacity 1.5s ease;
+}
+
+/* Efeito de Hover com Borda */
+.cardtes:hover::after {
+    opacity: 1;
+    border-right: 3px solid #ffffff;
 }
 
 section[id] {
@@ -451,7 +438,7 @@ section[id] {
 }
 
 #btnTopo:hover img {
-    transform: scale(1.2); /* Aumenta um pouco o ícone ao passar o mouse */
+    transform: scale(1.2);
 }
 
 @keyframes pulse {
@@ -467,7 +454,7 @@ section[id] {
 }
 
 #btnTopo.show {
-    animation: pulse 1.5s ease-in-out infinite; /* Pulsação contínua */
+    animation: pulse 1.5s ease-in-out infinite;
 }
 
 
@@ -480,8 +467,8 @@ section[id] {
     }
 
     body {
-        margin-left: 7% !important;
-        margin-right: 7% !important;
+        margin-left: 5% !important;
+        margin-right: 5% !important;
     }
 
     .header {
@@ -582,8 +569,22 @@ section[id] {
         font-weight: 300;
     }
 
+    .skill-icon {
+        margin: 15px;
+        padding: 15px;
+        transition: transform 0.3s ease;
+        border-bottom: 3px solid #f18809;
+        border-top-left-radius: 15px;
+    }
+    
+    .skill-icon img {
+        width: 70px;
+        height: 73px;
+        transition: transform 0.3s ease;
+    }
+
     section[id] {
-        scroll-margin-top: 160px;
+        scroll-margin-top: 90px;
     }
 
     .sobre-section h2,
