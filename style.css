@@ -25,12 +25,37 @@ html {
     padding-top: 120px;
   }
 
+  .header img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    animation: moveImage 5s ease-in-out infinite;
+    transition: transform 0.3s ease;
+    transform: scale(1);
+  }
+
+.header img:hover {
+    transform: scale(1.1);
+}
+
+
+@keyframes moveImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
   section {
     padding: 130px 0;
   }
   
-
-/* Estilo inicial do botão */
 .btncv {
     border: 2px solid #f18809;
     text-decoration: none;
@@ -87,9 +112,59 @@ html {
     text-align: start !important;
 }
 
+.logo-img {
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #f18809 !important;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05);
+}
+
 .navbar.bg-dark {
     background-color: #331436 !important;
     border-bottom: 1px solid #f18809;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 10px;
+}
+
+.navbar .nav-link {
+    position: relative;
+    color: white !important;
+    padding: 7px 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #f18809;
+    transition: width 0.3s ease;
+}
+
+.navbar .nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar .nav-link:hover {
+    color: #f18809 !important;
 }
 
 .navbar .navbar-brand,
@@ -99,10 +174,15 @@ html {
 
 }
 
+#cntt::after {
+    display: none !important;
+}
+
 #cntt {
-    background-color: #5e1464;
+    background-color: #890392;
     border-radius: 3px;
     padding: 7px 20px;
+    position: static !important;
 }
 
 #cntt:hover {
@@ -113,12 +193,6 @@ html {
 
 .navbar .nav-link {
     transition: all 0.3s ease;
-}
-
-
-.navbar .nav-link:hover {
-    color: #f18809!important;
-    border-bottom: 3px solid #f18809;
 }
 
 .navbar-toggler {
@@ -171,7 +245,6 @@ html {
     color: #f18809;
     font-weight: bold;
 }
-
 
 .header {
     margin-top: 10%;
@@ -246,7 +319,7 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.541), transparent),  url(img/amontadavalley.png);
+    background-image: url(img/amontadavalley.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -262,7 +335,8 @@ html {
     align-items: center;
     position: relative;
     z-index: 2;
-    border-bottom: 3px solid #f18809;
+    border-bottom: 5px solid #f18809;
+    background-color: rgba(0, 0, 0, 0.527);
 }
 
 .sobre-titulo {
@@ -601,10 +675,45 @@ section[id] {
         transition: background-color 0.3s ease, color 0.3s ease;
     }
 
+    .navbar-nav .nav-item {
+        margin-right: none;
+    }
+
+    .navbar .nav-link::after {
+        display: none;
+    }
+
+    .navbar .nav-link {
+        transition: none;
+    }
+
+    .navbar .nav-link:hover {
+        color: white !important;
+    }
+
     .navbar-nav .nav-link:hover {
         background-color: none;
         color: #f18809!important;
         border: none;
+    }
+
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: 10px;
+        font-size: 1.2rem;
+    }
+
+    .navbar-brand img {
+        width: 110px;
+        height: auto;
+        margin-right: 5px;
+    }
+
+    .navbar .container-fluid {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .headertt {
