@@ -38,8 +38,6 @@ O site é dividido nas seguintes seções:
 
 ## Captura de Tela
 
-Insira aqui um print do site para ilustrar como ele se apresenta:
-
 ![Print do site](./img/imgport.png)
 
 ---
@@ -48,4 +46,4 @@ Insira aqui um print do site para ilustrar como ele se apresenta:
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone https://github.com/MayconSantos04/Meu-Trabalho-Portif-lio.git
